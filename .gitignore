@@ -1,0 +1,8 @@
+#Jekyll Specific
+_site
+.sass-cache
+.jekyll-metadata
+
+# osx noise
+.DS_Store
+profile
