@@ -22,7 +22,7 @@ For the most part, the rendering engines are the same, although they do have sub
 The following passage:
 
 ~~~~~~
-#My main heading
+# My main heading
 {: .intro }
 
 This is my initial paragraph. In it I’d like to provide a link to the [Jekyll homepage](http://jekyllrb.com/ "Jekyll"). I want to add **bold** and *italic* formatting to text as well using the `strong` and `emphasis` tags.
@@ -50,7 +50,7 @@ Would be rendered in HTML as:
 
 As you can see, Markdown frees you from many of the structural restraints that would make it difficult to author something like a blog post using HTML. To write two paragraphs, for example, you simply write two paragraphs, no <p> tags or special formatting required. Let’s take a quick look at how to format some of the basic HTML elements in Kramdown.
 
-###Paragraphs
+### Paragraphs
 
 Consecutive lines of text are formatted as a single paragraph. As a block level element, you must to add a blank line after it to separate it from other block-level elements.
 
@@ -67,7 +67,7 @@ Renders as:
 <p>This is as well.</p>
 {% endhighlight %}
 
-###Headings
+### Headings
 
 There are multiple ways to format headings in Kramdown. The easiest is to preceed the heading with hash characters (**#**) equal to the heading level. An `h1` for example, would be written as `#heading 1`. 
 
@@ -87,7 +87,7 @@ Renders as:
 <h3>This is a heading 3</h3>
 {% endhighlight %}
 
-###Blockquotes
+### Blockquotes
 
 Blockquotes are formatted using the “greater than” character (**>**) at the start of the blockquote. Text inside a blockquote is wrapped with a paragraph. 
 
@@ -103,7 +103,7 @@ Renders as:
 </blockquote>
 {% endhighlight %}
 
-###Ordered Lists
+### Ordered Lists
 
 To create an ordered list, simply type a list started by a number followed by a period. Each list item should be on a separate line. Nested lists are created by indenting a list underneath an existing list item.
 
@@ -132,7 +132,7 @@ Renders as:
 </ol>
 {% endhighlight %}
 
-###Block-level attributes
+### Block-level attributes
 
 Often you may wish to assign attributes to block-level elements. To do this, follow the element with a *block inline attribute list* (block IAL). A block IAL consists of a left curly brace, followed by a colon, the attribute definitions and a right curly brace. 
 
@@ -174,7 +174,7 @@ Renders as:
 <h1 class="class1 class2" id="ID-1">This heading has two classes and one ID applied</h1>
 {% endhighlight %}
 
-###Inline formatting
+### Inline formatting
 
 Emphasis can be added to text by surrounding the text with either asterisks or underscores. This will result in wrapping the content in either the `strong` or `emphasis` tag depending upon how many are used:
 
@@ -188,7 +188,7 @@ Renders as:
 <p>I want to wrap <strong>this text</strong> in a strong tag and <em>this text</em> in an emphasis tag.</p>
 {% endhighlight %}
 
-###Links
+### Links
 
 You can create a link by surrounding the text with square brackets and then directly following it with the link URL in parentheses. To add a title attribute, add the desired title in straight quotes (" ") after the link URL.
 
@@ -202,7 +202,7 @@ Renders as:
 <p>I usually search using <a href="https://www.google.com" title="Google">Google</a>.</p>
 {% endhighlight %}
 
-###Images
+### Images
 
 Images are similar to links, but use an exclamation mark before the square brackets. The link text will become the alternative text of the image and the link URL specifies the image source.
 
