@@ -38,7 +38,7 @@ When creating your own site, you should give careful consideration to what type 
 
 Below the site settings the default config file contains a section for “build settings.” Even though they only include a single option here, this section hints at the fact that you can use the  **_config.yml** file to control much of the site’s serve and build options. The lone option here instructs Jekyll to use Kramdown as its Markdown converter. Here are a few other options you can use when controlling the serve and build processes:
 
-###local port
+### local port
 
 ~~~~~~
 port: PORT
@@ -46,7 +46,7 @@ port: PORT
 
 Listen to the given port. 4000 is the default.
 
-###base URL
+### base URL
 
 ~~~~~~
 baseurl: URL
@@ -54,7 +54,7 @@ baseurl: URL
 
 Serves the website from the given base URL, for example **/blog** would serve the home page from the blog subdirectory. Can be used to construct URLs throughout the site as well.
 
-###source
+### source
 
 ~~~~~~
 source: <directory>
@@ -62,7 +62,7 @@ source: <directory>
 
 Sets the directory Jekyll uses as the root directory for building files. By default it’s the current directory that the `build` command is run in.
 
-###destination
+### destination
 
 ~~~~~~
 destination: <directory>
@@ -70,7 +70,7 @@ destination: <directory>
 
 Sets the directory where Jekyll writes the built site. By default Jekyll creates a `_site` directory in the `source` directory.
 
-###exclude
+### exclude
 
 ~~~~~~
 exclude: [DIR, FILE, ...]
@@ -78,7 +78,7 @@ exclude: [DIR, FILE, ...]
 
 Lists files and directories to exclude from the build process. Useful for source asset files like .psd files and other files that are not part of the build process or final site.
 
-###include
+### include
 
 ~~~~~~
 include: [DIR, FILE, ...]
@@ -86,7 +86,7 @@ include: [DIR, FILE, ...]
 
 Lists files and directories that are copied over to the finished site regardless of their filetype or extension. Dotfiles, for example, are excluded from the build, so you could force the inclusion of a .gitignore or .htaccess file. The default value for `include` contains .htacess.
 
-###keep
+### keep
 
 ~~~~~~
 keep_files: [DIR, FILE, ...]
@@ -94,7 +94,7 @@ keep_files: [DIR, FILE, ...]
 
 During the build process the destination folder is wiped clean before the site is regenerated. If you have files or directories in the destination folder that are not part of the build process this setting can preserve those files. Useful for favicon files or other site assets that are unlikely to change and not controlled by Jekyll.
 
-###encoding
+### encoding
 
 ~~~~~~
 encoding: ENCODING
@@ -102,7 +102,7 @@ encoding: ENCODING
 
 Sets the encoding used for files. The default is utf-8.
 
-###permalink
+### permalink
 
 ~~~~~~
 permalink: [options]
@@ -110,7 +110,7 @@ permalink: [options]
 
 Specifies the permalink style used for posts and controls the directory structure for generated posts. The default, `date`, results in the permalink /YEAR/MO/DATE/name.html. Therefore a post titled **2015-01-29-first-post.md** would have the permalink of /2015/01/29/first-post.html, and would be generated using that directory structure. For a full list of permalink options, see the [Jekyll documentation on permalinks](http://jekyllrb.com/docs/permalinks/ "permalinks").
 
-###pagination
+### pagination
 
 ~~~~~~
 paginate: [num]
@@ -118,6 +118,6 @@ paginate: [num]
 
 Allows you to set the number of blog posts to display on the **index.html** page. This allows you to break your posts up and display them over a number of pages. For an overview of how pagination works, and how to also set the `paginate_path` option, see the [Jekyll documentation on pagination](http://jekyllrb.com/docs/pagination/ "pagination").
 
-###More information
+### More information
 
 This is a brief look at some of the configuration options available for your **_confing.yml** file. For more information on configuration, and how to set global default options for pages, check the full [Jekyll documentation on site configuration](http://jekyllrb.com/docs/configuration/ "configuration").
