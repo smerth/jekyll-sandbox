@@ -5,10 +5,6 @@ baseurl: "/jekyll_sandbox"
 url: "https://smerth.github.io/jekyll_sandbox/"
 tagline: A basic guide to Jekyll
 
-# Require gems
-# may not be necessary as require plugins is definitely used by the app...
-gems: [jekyll-paginate, jekyll-gist]
-
 # Require plugins
 plugins: [jekyll-paginate, jekyll-gist]
 
